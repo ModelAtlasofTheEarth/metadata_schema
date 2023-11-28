@@ -1,7 +1,7 @@
 # metadata_schema
 
 List of Types used in codemeta (https://codemeta.github.io/terms/)
-Most of these schema.org types
+Most of these are schema.org types
 
 - URL
 - Text
