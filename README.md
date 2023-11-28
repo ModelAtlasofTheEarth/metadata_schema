@@ -3,9 +3,9 @@
 List of Types used in codemeta (https://codemeta.github.io/terms/)
 Most of these schema.org types
 
--URL
+- URL
 - Text
-- ComputerLanguage or Text
+- ComputerLanguage
 - SoftwareApplication
 - CreativeWork
 - SoftwareSourceCode
