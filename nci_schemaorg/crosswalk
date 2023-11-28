@@ -1,0 +1,18 @@
+Title	CreativeWork:name
+Abstract	CreativeWork:description
+Topic category	CreativeWork:keywords
+Field of research (FOR)	CreativeWork:about
+License	CreativeWork:license
+Dataset status	CreativeWork:status
+Maintenance frequency	CreativeWork:productionFrequency
+Owner	CreativeWork:publisher
+Funder	CreativeWork:sponsor
+Author	CreativeWork:author
+Credit	CreativeWork:creditedTo
+Keyword	CreativeWork:keywords
+Dataset version	Dataset:version
+Temporal extents	Dataset:temporalCoverage
+Spatial extents	Dataset:spatialCoverage
+Dataset lineage information	Dataset:isBasedOn
+Dataset format	Dataset:encodingFormat
+Dataset status	CreativeWork:status	

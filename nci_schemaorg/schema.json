@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "schema": "http://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Title of the Dataset",
+  "version": "Dataset Version",
+  "description": "Abstract of the Dataset",
+  "keywords": ["Topic Category", "Field of Research"],
+  "license": "URL to License",
+  "isBasedOn": "Dataset Lineage Information",
+  "encodingFormat": "Dataset Format",
+  "status": "Dataset Status",
+  "productionFrequency": "Maintenance Frequency",
+  "temporalCoverage": {
+    "@type": "TimeRange",
+    "startDate": "Start Date",
+    "endDate": "End Date"
+  },
+  "spatialCoverage": {
+    "@type": "Place",
+    "geo": {
+      "@type": "GeoShape",
+      // Define spatial extent properties here
+    }
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Owner"
+  },
+  "sponsor": {
+    "@type": "Organization",
+    "name": "Funder"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Author"
+  },
+  "creditedTo": "Credit"
+}
