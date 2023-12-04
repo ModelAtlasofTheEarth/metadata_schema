@@ -40,3 +40,8 @@ Not all entities need to be physically stored in the M@TE model. For instance, i
 While code and documentation can be provide through github, model output data will usually be handled separetely. If you click the box "I plan to submit model data", a hidden diretcly will be created in the model creation phase. Later, once the model hae been checked and copied onto the NCI fielsystem, you will recieve an upload link. 
 
 At this stage, you will relise that your model exists both as a github repository, as well as beign hosted on the NCI. Morover, your model may contain dofferent payloads at different locations depending on different locations. The metdata file is what links these entities together. 
+
+## m@tedata template
+
+
+![image info](json_templates/image.png) 
