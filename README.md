@@ -1,19 +1,23 @@
-# M@TE Metadata overview (m@tadata)
+# M@TE Metadata Model (m@te-data)
 
-We refer to `m@tadata' as the metadata model and implemetation used in the M@TE project. m@tadata a collection of resources represented as a Schema.org types, that together form a meaningful unit for the purposes of communication, citation, distribution, preservation, etc. The development was informed by projects such as codemeta, ro-crate amd comses.net
+We refer to `m@te-data' as the metadata model and implemetation used in the M@TE project. m@te-data refers to collection of resources represented as a Schema.org types, that together form a meaningful unit for the purposes of communication, citation, distribution, preservation, etc. The development was informed by projects such as codemeta, ro-crate amd comses.net
 
 ## Summary
 
 
-In `m@tadata', the idea of a computational model is encapsulated through a collection of several `schema.org` types or entities. Similar to ro-crate, we us an @graph array to add entities to the metadata model.
+In `m@te-data', the idea of a computational model is encapsulated through a collection of several `schema.org` types or entities. 
 
-The metadata template (m@tadata.json) is based on json-ld and schema.org, and was designed to fulfil metadata requirements (ISO 19115) used in teh NCI GeoNetwork catalog. 
+The metadata template (m@te-data.json) is based on json-ld and schema.org, and was designed to fulfil metadata requirements (ISO 19115) used in teh NCI GeoNetwork catalog. 
 
-The most general layer of information is collected in an object `CreativeWork'. This is a broad category that encompassed many applicable entities, such as Dataset, SoftWareSource code. Many of the field requierements in ISO 19115 are easily mapped to  `CreativeWork' Properties. For instance `CreativeWork' properties will hold information about licence and author.
+Similar to RO-Crates, we us an @graph array to add differtent entities to the metadata model.
+
+The most general layer of information is collected in a`CreativeWork'. Many of the field requierements in ISO 19115 are easily mapped to  `CreativeWork' Properties. For instance `CreativeWork' properties will hold information about licence and author.
 
 Other useful entities are `DataSet', `SoftwareSourceCode' and `Publication'. However, the metadata format is flexilble, and additional entities may be added by the user. 
 
 What to do with multiple entites of the same type?
+
+What @id takes precedence?
 
 ## Comparison with RO-Crate
 
@@ -21,8 +25,7 @@ The `m@tadata' has several similarities to ro-crate; in general we try to adopt 
 
 Unlike RO-Crates, m@tadata is not intended to create file manifests. One reason for this is that we M@TE enforces a more homegneous subdirector structure. That is, we kno in advance that certain subdirectoroies will contain certian files. File mianifets are provie by M@TE, but are nore incldued in the m@tadata' model. 
 
-
-
+Nor do we envisage m@tadata as a way to encapsulate workflow information (e.g, https://www.researchobject.org/ro-crate/1.1/workflows.html). In this respect we follow comses.net.
 
 
 ## Structure and creation of a M@TE model
