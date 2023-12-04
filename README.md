@@ -44,4 +44,4 @@ At this stage, you will relise that your model exists both as a github repositor
 ## m@tedata template
 
 
-![image info](json_templates/image.png) 
+![./json_templates/m@te-data.json viewed at https://json-ld.org/playground/)](json_templates/JSON-LD_Playground.png) 
