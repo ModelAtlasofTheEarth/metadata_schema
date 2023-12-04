@@ -15,21 +15,19 @@ The most general layer of information is collected in a`CreativeWork'. Many of t
 
 Other useful entities are `DataSet', `SoftwareSourceCode' and `Publication'. However, the metadata format is flexilble, and additional entities may be added by the user. 
 
-What to do with multiple entites of the same type?
+Questions:
 
-What @id takes precedence?
+* What to do with multiple entites of the same type (multiple publications, datasets)?
+* What @id takes precedence?
 
 ## Comparison with RO-Crate
 
-The `m@te-data has several similarities to ro-crate; in general we try to adopt the same terminology. One similarity is the use of the @graphy array as the bucket that stores different entitites. Like RO-Crates, m@tadata can also reference external resources which are stored or accessed separately, via absolute URIs. 
+The m@te-data model has several similarities to ro-crate (we try to adopt the same terminology). One similarity is the use of the @graph array as the `bucket' that stores different entitites. Like RO-Crates, m@tadata can also reference  both internal entites, such as code stored in the `code' subdirectory ("@type": "SoftwareSourceCode"), as well as external entities which are stored or accessed separately, via absolute URIs. 
 
-Unlike RO-Crates, m@te-data is not intended to create file manifests. One reason for this is that we M@TE enforces a more homegneous subdirector structure. That is, we kno in advance that certain subdirectoroies will contain certian files. File mianifets are provie by M@TE, but are nore incldued in the m@te-data' model. 
-
-Nor do we envisage m@tadata as a way to encapsulate workflow information (e.g, https://www.researchobject.org/ro-crate/1.1/workflows.html). In this respect we follow comses.net.
+Unlike RO-Crates, m@te-data is not intended to create file manifests. One reason for this is that M@TE model a anticapted to have a more homegneous subdirectory structure. That is, we know in advance that certain subdirectories will contain certian files. File manifests are provided by M@TE, but are not included in the m@te-data model. Nor do we envisage m@tadata as a way to encapsulate workflow information (e.g, https://www.researchobject.org/ro-crate/1.1/workflows.html). In this respect we follow comses.net, and leave this to the user to document in standard ways. 
 
 
 ## Structure and creation of a M@TE model
-
 
 
 A M@TE model is usually created using a github issue form. When you fill out and submit a `model_submission' issue, some checks will run, and a new repository will be created. This top level directory will be named with a slug: e.g `name_topic_year'. The m@tadata.json file will sit in this directory. The model submission workflow promarily helps users contruct this `bucket' of metadata.  
