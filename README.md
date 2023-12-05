@@ -7,7 +7,7 @@ We refer to `m@te-data` as the metadata model and implemetation used in the M@TE
 
 In `m@te-data`, the idea of a computational model is encapsulated through a collection of several `schema.org` types or entities. 
 
-The metadata template (m@te-data.json) is based on json-ld and schema.org, and was designed to fulfil metadata requirements (ISO 19115) used in teh NCI GeoNetwork catalog. 
+The metadata template (m@te-data.json) is based on json-ld and schema.org, and was designed to fulfil metadata requirements (ISO 19115) used in the NCI GeoNetwork catalog. 
 
 Similar to RO-Crates, we us an @graph array to add differtent entities to the metadata model.
 
