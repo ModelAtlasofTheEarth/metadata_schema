@@ -47,12 +47,13 @@
       "@type": ["SoftwareSourceCode", "ComputationalWorkflow"],
       "name": "Code for Creative Work",
       "owl:sameAs": [],
+      "keywords": "",
       "targetProduct":     {
-      "@id": "http://example.org/software/1",
-      "@type": ["SoftwareSourceCode", "SoftwareApplication"],
-      "name": "Software framework to run you model",
-      "owl:sameAs": []
-    }
+        "@id": "http://example.org/software/1",
+        "@type": ["SoftwareSourceCode", "SoftwareApplication"],
+        "name": "Software framework to run you model",
+        "owl:sameAs": []
+                          }
     }
 
 
