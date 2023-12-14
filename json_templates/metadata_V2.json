@@ -30,7 +30,7 @@
     {
       "@id": "http://example.org/dataset/1",
       "@type": "Dataset",
-      "name": "Data for Creative Work",
+      "name": "output data for model",
       "Dataset version": "",
       "Temporal extents": "",
       "Spatial extents": "",
@@ -43,8 +43,8 @@
 
     {
       "@id": "http://example.org/software/1",
-      "@type": "SoftwareSourceCode",
-      "name": "Code for Creative Work",
+      "@type": ["SoftwareSourceCode", Dataset],
+      "name": "Code and inputs for Creative Work",
       "owl:sameAs": [],
       "keywords": "",
       "targetProduct":     {
