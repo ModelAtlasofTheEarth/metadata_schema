@@ -1,6 +1,7 @@
 # M@TE Metadata Model 
 
-In this document the term `m@tedata` is used to refer to the metadata model and implemetation used in the M@TE project. m@tedata refers to collection of entities  - primaily schema.org types - that together form a meaningful unit for the purposes of communication, citation, distribution, preservation, etc. The development was informed by projects such as codemeta, ro-crate amd comses.net
+In this document the term `m@tedata` is used to refer to the metadata model and implemetation used in the M@TE project. m@tedata refers to collection of entities  - primaily schema.org types - that together form a meaningful unit for the purposes of communication, citation, distribution, preservation, etc. The development was informed by projects such as codemeta, ro-crate, comses.net, bioschemas, science-on-schema.
+
 
 ## Summary
 
