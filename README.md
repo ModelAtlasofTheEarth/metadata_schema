@@ -23,7 +23,9 @@ In many cases computatation models in Earth Science, involve a novel usage (new 
 
 We use the "TargetProduct" property of the "SoftwareSourceCode" to designate the software framework/application that the code is designed to run on. The TargetProduct is given the (dual) @type ["SoftwareSourceCode", "SoftwareApplication"]. This reflects the fact that the TargetProduct is a often a binary or a pakaage within an environemt (Julia, Pythom) but is often distributred as source code, and builty by users/ 
 
-There has been some debate about the intented use of 
+There has been some debate about the intented use of "TargetProduct",  and whether it should reflect a SoftwareApplication or the RuntimeEnvironment, or teh OS. We interpret is as the former. 
+
+see https://github.com/codemeta/codemeta/pull/300
 
 ## Questions:
 
