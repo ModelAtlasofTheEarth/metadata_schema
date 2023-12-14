@@ -52,6 +52,7 @@
         "@id": "http://example.org/software/1",
         "@type": ["SoftwareSourceCode", "SoftwareApplication"],
         "name": "Software framework to run you model",
+        "funder": "",
         "owl:sameAs": []
                           }
     }
