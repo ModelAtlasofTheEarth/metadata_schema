@@ -52,7 +52,7 @@
         "@type": ["SoftwareSourceCode", "SoftwareApplication"],
         "name": "Software framework to run you model",
         "funder": "",
-        "buildInstructions":",
+        "buildInstructions":"",
         "owl:sameAs": []
                           }
     }
