@@ -3,10 +3,6 @@
     "codemeta": "https://codemeta.github.io/terms/",
     "schema": "http://schema.org",
     "owl": "http://www.w3.org/2002/07/owl#"},
-
-
-  "hasPart": [
-    {
       "name": "test_model_2023",
       "@id": "http://example.org/work/1",
       "@type": "CreativeWork",
@@ -21,8 +17,16 @@
       "funder": "",
       "author": "",
       "creditedTo": "",
-      "keywords": ""
+      "keywords": "",
+  "citation":     {
+      "@id": "http://example.org/publication/1",
+      "@type": "Publication",
+      "name": "Research Paper on Creative Work",
+      "owl:sameAs": []
     },
+  
+  "hasPart": [
+  
     {
       "@id": "http://example.org/dataset/1",
       "@type": "Dataset",
@@ -36,12 +40,7 @@
       "owl:sameAs": [],
       "distribution": ""
     },
-    {
-      "@id": "http://example.org/publication/1",
-      "@type": "Publication",
-      "name": "Research Paper on Creative Work",
-      "owl:sameAs": []
-    },
+
     {
       "@id": "http://example.org/software/1",
       "@type": ["SoftwareSourceCode", "ComputationalWorkflow"],
