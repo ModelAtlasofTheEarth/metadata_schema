@@ -1,33 +1,38 @@
 # M@TE Metadata Model 
 
-In this document the term `m@tedata` is used to refer to the metadata model and implemetation used in the M@TE project. m@tedata refers to collection of entities  - primaily schema.org types - that together form a meaningful unit for the purposes of communication, citation, distribution, preservation, etc. The development was informed by projects such as codemeta, ro-crate, comses.net, bioschemas, science-on-schema.
-
-
 ## Summary
 
+In this document the term `m@tedata` is used to refer to the metadata model and implemetation used in the M@TE project. 
+The idea of a computational model is encapsulated through a collection of several `schema.org` types or entities. Together form a meaningful unit for the purposes of communication, citation, distribution, preservation, etc. 
 
-In m@tedata, the idea of a computational model is encapsulated through a collection of several `schema.org` types or entities. 
+The development was informed by projects such as codemeta, ro-crate, comses.net, bioschemas, science-on-schema.
+https://github.com/ModelAtlasofTheEarth/mate_template/tree/main
 
-The metadata template (metadata_V*.json) represents WIP to define.refine the m@tedata. 
+## Structure and development
 
-A key requirement is that m@tedat can fulfil metadata requirements (ISO 19115) used in the NCI GeoNetwork catalog. 
+
+The metadata template (metadata_V*.json) represents WIP to define/refine m@tedata. 
+
+A key requirement is that m@tedata can fulfil metadata requirements (ISO 19115) used in the NCI GeoNetwork catalog. 
 
 The most general layer of information is collected in a`CreativeWork`. Many of the field requierements in ISO 19115 are easily mapped to  `CreativeWork` Properties. For instance `CreativeWork` properties will hold information about licence authors, keywords, version, citation, funder etc.
 
-We use the`CreativeWork` `hasPart` as a flexible container to describe different entities. Again, these entities are based largelty on Schema.org: e.g. `DataSet`, `SoftwareSourceCode`. However, the metadata format is flexilble, and additional entities may be added by the user, and relationships may also be changed.  
+We use the`CreativeWork` `hasPart` as a flexible container to describe different entities. Again, these entities are based largely on Schema.org entities: e.g. `DataSet`, `SoftwareSourceCode`. However, the metadata format is flexilble, and additional entities may be added by the user, and relationships may also be changed.  
 
-The design here is similar to RO-Crates, which use a json-ld @graph array to add differtent entities to the metadata model.
+Some of these entities refer to directories and file payloads that are stored in the M@TE model (e.g. on NCI), other entities exist elswhere are are identified with @id.
+
+The design here is somewhat similar to RO-Crates, which use a json-ld @graph array to add differtent entities to the metadata model.
 
 ## Ambiguities and definitions
 
-In many cases computatation models in Earth Science, involve a novel usage (new model) of an existing software framework/application. This may involve a new set of paramaters, new plugins, modification to the source code of the existing sorftware application. We want the metadata model try to reflect these relationships. We encourage users to add any model code (and inputs) that are required to run their model. In the metadata model this code directory is represented with the "SoftwareSourceCode" type. Other types can be added and extended. 
+In many cases computatation models involve a novel usage (new model) developed with an existing software framework/application. This may involve a new set of paramaters, new plugins, modification to the source code of the existing software application. 
+
+We want the metadata model try to reflect these relationships. We encourage users to add any model code (and inputs) that are required to run their model. Physcall, these files go into the `model_code_inputs` dircectory.  In the metadata model this directory is represented with the dual types ["SoftwareSourceCode", "Dataset"] type. Other types can be added and extended. 
 For intance, the "ComputationalWorkflow" is extension of "SoftwareSourceCode" from Bioschemas (https://bioschemas.org/), which introduces Properties such as "input" and "output".   
 
 We use the "TargetProduct" property of the "SoftwareSourceCode" to designate the software framework/application that the code is designed to run on. The TargetProduct is given the (dual) @type ["SoftwareSourceCode", "SoftwareApplication"]. This reflects the fact that the TargetProduct is a often a binary or a pakaage within an environemt (Julia, Pythom) but is often distributred as source code, and builty by users/ 
 
-There has been some debate about the intented use of "TargetProduct",  and whether it should reflect a SoftwareApplication or the RuntimeEnvironment, or teh OS. We interpret is as the former. 
-
-see https://github.com/codemeta/codemeta/pull/300
+There has been some debate about the intented use of "TargetProduct",  and whether it should reflect a SoftwareApplication or the RuntimeEnvironment, or teh OS. We interpret is as the former (see https://github.com/codemeta/codemeta/pull/300)
 
 ## Questions:
 
