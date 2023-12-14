@@ -1,21 +1,31 @@
-# M@TE Metadata Model (m@te-data)
+# M@TE Metadata Model 
 
-We refer to `m@te-data` as the metadata model and implemetation used in the M@TE project. m@te-data refers to collection of resources represented as a Schema.org types, that together form a meaningful unit for the purposes of communication, citation, distribution, preservation, etc. The development was informed by projects such as codemeta, ro-crate amd comses.net
+In this document the term `m@tedata` is used to refer to the metadata model and implemetation used in the M@TE project. m@tedata refers to collection of entities  - primaily schema.org types - that together form a meaningful unit for the purposes of communication, citation, distribution, preservation, etc. The development was informed by projects such as codemeta, ro-crate amd comses.net
 
 ## Summary
 
 
-In `m@te-data`, the idea of a computational model is encapsulated through a collection of several `schema.org` types or entities. 
+In m@tedata, the idea of a computational model is encapsulated through a collection of several `schema.org` types or entities. 
 
-The metadata template (m@te-data.json) is based on json-ld and schema.org, and was designed to fulfil metadata requirements (ISO 19115) used in the NCI GeoNetwork catalog. 
+The metadata template (metadata_V*.json) represents WIP to define.refine the m@tedata. 
 
-Similar to RO-Crates, we us an @graph array to add differtent entities to the metadata model.
+A key requirement is that m@tedat can fulfil metadata requirements (ISO 19115) used in the NCI GeoNetwork catalog. 
 
-The most general layer of information is collected in a`CreativeWork`. Many of the field requierements in ISO 19115 are easily mapped to  `CreativeWork` Properties. For instance `CreativeWork` properties will hold information about licence and author.
+The most general layer of information is collected in a`CreativeWork`. Many of the field requierements in ISO 19115 are easily mapped to  `CreativeWork` Properties. For instance `CreativeWork` properties will hold information about licence authors, keywords, version, citation, funder etc.
 
-Other useful entities are `DataSet`, `SoftwareSourceCode` and `Publication`. However, the metadata format is flexilble, and additional entities may be added by the user. 
+We use the`CreativeWork` `hasPart` as a flexible container to describe different entities. Again, these entities are based largelty on Schema.org: e.g. `DataSet`, `SoftwareSourceCode`. However, the metadata format is flexilble, and additional entities may be added by the user, and relationships may also be changed.  
 
-Questions:
+The design here is similar to RO-Crates, which use a json-ld @graph array to add differtent entities to the metadata model.
+
+## Ambiguities and definitions
+
+SoftwareSourceCode` and SoftwareApplication'
+
+In many cases computatation models in (solid) Earth Science, involve a novel usage of an existing sodtware package/application/etc. This may involve
+
+We want the metadata try to 
+
+## Questions:
 
 * What to do with multiple entites of the same type (multiple publications, datasets)?
 * What @id takes precedence?
