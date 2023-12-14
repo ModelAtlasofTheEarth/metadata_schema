@@ -43,7 +43,7 @@
 
     {
       "@id": "http://example.org/software/1",
-      "@type": ["SoftwareSourceCode", "ComputationalWorkflow"],
+      "@type": "SoftwareSourceCode",
       "name": "Code for Creative Work",
       "owl:sameAs": [],
       "keywords": "",
@@ -52,6 +52,7 @@
         "@type": ["SoftwareSourceCode", "SoftwareApplication"],
         "name": "Software framework to run you model",
         "funder": "",
+        "buildInstructions":",
         "owl:sameAs": []
                           }
     }
