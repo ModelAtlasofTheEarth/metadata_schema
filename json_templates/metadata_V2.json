@@ -5,7 +5,7 @@
     "owl": "http://www.w3.org/2002/07/owl#"},
 
 
-  "@graph": [
+  "hasPart": [
     {
       "name": "test_model_2023",
       "@id": "http://example.org/work/1",
@@ -34,6 +34,7 @@
       "Dataset format": "",
       "Dataset status": "",
       "owl:sameAs": [],
+      "distribution": ""
     },
     {
       "@id": "http://example.org/publication/1",
@@ -43,16 +44,17 @@
     },
     {
       "@id": "http://example.org/software/1",
-      "@type": "SoftwareSourceCode",
+      "@type": ["SoftwareSourceCode", "ComputationalWorkflow"],
       "name": "Code for Creative Work",
-      "owl:sameAs": []
-    },
-    {
+      "owl:sameAs": [],
+      "targetProduct":     {
       "@id": "http://example.org/software/1",
-      "@type": "SoftwareApplication",
+      "@type": ["SoftwareSourceCode", "SoftwareApplication"],
       "name": "Software framework to run you model",
       "owl:sameAs": []
     }
+    }
+
 
              ]
 }
