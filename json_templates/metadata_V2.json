@@ -43,7 +43,7 @@
 
     {
       "@id": "http://example.org/software/1",
-      "@type": ["SoftwareSourceCode", Dataset],
+      "@type": ["SoftwareSourceCode", "Dataset"],
       "name": "Code and inputs for Creative Work",
       "owl:sameAs": [],
       "keywords": "",
