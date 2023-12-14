@@ -7,6 +7,7 @@
       "@id": "http://example.org/work/1",
       "@type": "CreativeWork",
       "name": "",
+      "creator": "",
       "description": "",
       "keywords": "",
       "about": "",
