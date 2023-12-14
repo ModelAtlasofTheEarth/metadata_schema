@@ -20,7 +20,8 @@ The design here is similar to RO-Crates, which use a json-ld @graph array to add
 
 ## Ambiguities and definitions
 
-In many cases computatation models in Earth Science, involve a novel usage (new model) of an existing software framework/application. This may involve a new set of paramaters, new plugins, modification to the source code of the existing sorftware application. We want the metadata model try to reflect these relationships. We encourage users to add any model code (and inputs) that are required to run their model. In the metadata model this code directory is represented with the dual types ["SoftwareSourceCode", "ComputationalWorkflow"]. Other types can be added. The "ComputationalWorkflow" comes from Bioschemas (https://bioschemas.org/). 
+In many cases computatation models in Earth Science, involve a novel usage (new model) of an existing software framework/application. This may involve a new set of paramaters, new plugins, modification to the source code of the existing sorftware application. We want the metadata model try to reflect these relationships. We encourage users to add any model code (and inputs) that are required to run their model. In the metadata model this code directory is represented with the "SoftwareSourceCode" type. Other types can be added and extended. 
+For intance, the "ComputationalWorkflow" is extension of "SoftwareSourceCode" from Bioschemas (https://bioschemas.org/), which introduces Properties such as "input" and "output".   
 
 We use the "TargetProduct" property of the "SoftwareSourceCode" to designate the software framework/application that the code is designed to run on. The TargetProduct is given the (dual) @type ["SoftwareSourceCode", "SoftwareApplication"]. This reflects the fact that the TargetProduct is a often a binary or a pakaage within an environemt (Julia, Pythom) but is often distributred as source code, and builty by users/ 
 
