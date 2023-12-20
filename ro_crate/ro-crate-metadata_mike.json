@@ -1,0 +1,135 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.0/context",
+    {
+      "@vocab": "https://schema.org/"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "about": {
+        "@id": "./"
+      },
+      "identifier": "ro-crate-metadata.json",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.0"
+      },
+      "license": {
+        "@id": "https://creativecommons.org/licenses/by-sa/3.0"
+      },
+      "description": "Sample RO-Crate"
+    },
+    {
+      "@type": "Dataset",
+      "author": {
+        "@id": "https://orcid.org/0000-0001-0002-0003"
+      },
+      "citation": {
+        "@id": "https://doi.org/10.5281/zenodo.3966161"
+      },
+      "datePublished": "2020-09-09T23:00:00.000Z",
+      "description": "Numerical model for plate tectonics with visualisations",
+      "hasPart": [
+        {
+          "@id": "input_data.nc"
+        },
+        {
+          "@id": "results.nc"
+        },
+        {
+          "@id": "visualisation.mp4"
+        },
+        {
+          "@id": "https://github.com/ResearchOrg/numerical_model/"
+        },
+        {
+          "@id": "https://github.com/ResearchOrg/visualisationTool/"
+        },
+        {
+          "@id": "#datasetCreation"
+        },
+        {
+          "@id": "#visualisationCreation"
+        }
+      ],
+      "license": {
+        "@id": "https://spdx.org/licenses/CC0-1.0"
+      },
+      "name": "Sample dataset for M@TE",
+      "publisher": {
+        "@id": "https://github.com/ModelAtlasofTheEarth/"
+      },
+      "@id": "./"
+    },
+    {
+      "@id": "input_data.nc",
+      "@type": "File"
+    },
+    {
+      "@id": "results.nc",
+      "@type": "File"
+    },
+    {
+      "@id": "visualisation.mp4",
+      "@type": "File"
+    },
+    {
+      "@id": "https://github.com/ResearchOrg/numerical_model/",
+      "@type": "SoftwareSourceCode",
+      "url": "https://github.com/ResearchOrg/numerical_model/",
+      "name": "Our Numerical modelling package",
+      "programmingLanguage": {
+        "@id": "https://www.python.org/downloads/release/python-380/"
+      },
+      "version": "v1.0.2"
+    },
+    {
+      "@id": "https://github.com/ResearchOrg/visualisationTool/",
+      "@type": "SoftwareSourceCode",
+      "url": "https://github.com/ResearchOrg/visualisationTool/",
+      "name": "Our visualisation tool",
+      "programmingLanguage": {
+        "@id": "https://www.python.org/downloads/release/python-380/"
+      },
+      "version": "v1.0.2"
+    },
+    {
+      "@id": "#datasetCreation",
+      "@type": "CreateAction",
+      "agent": {
+        "@id": "https://orcid.org/0000-0001-0002-0003"
+      },
+      "description": "Running the simulation",
+      "endTime": "2017-06-11T12:56:14+10:00",
+      "instrument": [
+        { "@id": "https://github.com/ResearchOrg/numerical_model/" }
+      ],
+      "object": {
+        "@id": "input_data.nc"
+      },
+      "result": {
+        "@id": "results.nc"
+      }
+    },
+    {
+      "@id": "#visualisationCreation",
+      "@type": "CreateAction",
+      "agent": {
+        "@id": "https://orcid.org/0000-0001-0002-0003"
+      },
+      "description": "Visualisation of results",
+      "endTime": "2017-07-11T12:56:14+10:00",
+      "instrument": [
+        { "@id": "https://github.com/ResearchOrg/visualisationTool/" }
+      ],
+      "object": {
+        "@id": "results.nc"
+      },
+      "result": {
+        "@id": "visualisation.mp4"
+      }
+    }
+  ]
+}
