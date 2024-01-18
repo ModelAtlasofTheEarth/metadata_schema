@@ -15,4 +15,4 @@ Temporal extents	Dataset:temporalCoverage
 Spatial extents	Dataset:spatialCoverage
 Dataset lineage information	Dataset:isBasedOn
 Dataset format	Dataset:encodingFormat
-Dataset status	CreativeWork:status	
+Dataset status	CreativeWork:status
