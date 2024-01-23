@@ -82,10 +82,6 @@
       "givenName": "Jane",
       "familyName": "Doe"
     },
-    {"@type": "Organization",
-    "@id": "https://ror.org/04yx6dh41",
-    "name": "National Computational Infrastructure"
-    },
     {
       "@id": "#datasetCreation",
       "@type": "CreateAction",
@@ -104,6 +100,5 @@
         "@id": "model_output_data"
       }
     }
-
  ]
 }
