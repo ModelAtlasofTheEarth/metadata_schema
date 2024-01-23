@@ -80,24 +80,6 @@
       "givenName": "Jane",
       "familyName": "Doe"
     },
-    {
-      "@id": "#datasetCreation",
-      "@type": "CreateAction",
-      "agent": {
-        "@id": "https://orcid.org/0000-0001-0002-0003"
-      },
-      "description": "Running the simulation",
-      "endTime": "2017-06-11T12:56:14+10:00",
-      "instrument": [
-        { "@id": "https://zenodo.org/records/1234667" }
-      ],
-      "object": {
-        "@id": "model_code_inputs"
-      },
-      "result": {
-        "@id": "model_output_data"
-      }
-    }
 
 
  ]
