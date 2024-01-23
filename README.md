@@ -6,8 +6,6 @@ In the M@TE project, the metadata format that describes a model is based on the 
 
 In RO-Crate, a research-object (here a computational model) is encapsulated through a collection (crate) of several `schema.org` types or entities. Together these form a meaningful unit for the purposes of communication, citation, distribution, preservation, etc.
 
-Similar projects/efforts can be found at codemeta, comses.net, bioschemas, science-on-schema.
-
 The file `mate_ro_crate/ro-crate-metadata.jsonld` is the basic template, which is filled out in the model submission stage. Users can extend or modify this file.
 
 ## RO-Crate: background 
@@ -74,4 +72,7 @@ While code and documentation can be provide through github, model output data wi
 
 M@TE mdoels exists both as a github repository, as well as being hosted on the NCI. Moreover, your model may contain different payloads at different locations depending on different locations. The metadata file is what links these entities together.
 
+## Further information:
+
+Similar projects/efforts can be found at codemeta, comses.net, bioschemas, science-on-schema.
 
