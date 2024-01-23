@@ -74,13 +74,5 @@
     "owl:sameAs": []
   },
 
-    {
-      "@id": "https://orcid.org/0000-0001-0002-0003",
-      "@type": "Person",
-      "givenName": "Jane",
-      "familyName": "Doe"
-    }
-
-
  ]
 }
