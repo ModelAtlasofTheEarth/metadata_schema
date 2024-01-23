@@ -24,8 +24,6 @@
       "hasPart": [
         {"@id": "model_code_inputs"},
         {"@id": "model_output_data"},
-        {"@id": "https://github.com/ResearchOrg/numerical_model/"},
-        {"@id": "https://zenodo.org/records/1234667"},
         {"@id": "#datasetCreation"}
       ]
     },
