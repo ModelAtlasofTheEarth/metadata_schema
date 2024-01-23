@@ -15,9 +15,7 @@ The file `mate_ro_crate/ro-crate-metadata.jsonld` is the basic template, which i
 
 In RO-Crate a research-object is encapsulated through a collection (crate) of several `schema.org` types or entities.  Schema.org is a collaborative, community activity with a mission to create, maintain, and promote schemas for structured data on the Internet, on web pages, in email messages, and beyond.
 
-Some of these entities refer to directories and file payloads that are stored in the M@TE model (e.g. on Github/NCI). These are referred to as `data entities` 
-
-Other entities exist elsewhere,  for instance people, research groups, and data is already available on persistent web repositories, such as Zenodo. These are referred to as `contextual entities` 
+Some of these entities refer to directories and file payloads that are stored in the M@TE model (e.g. on Github/NCI). These are generally referred to as `data entities`. Other entities exist elsewhere, for instance people, research groups, and data is already available on persistent web repositories, such as Zenodo. These are referred to as `contextual entities` 
 
 Ro-crates use the JSON-LD format. JSON-LD is a lightweight Linked Data format.  In the JSON-LD format, the crate is represented by the @graph array:
 
@@ -32,19 +30,24 @@ Ro-crates use the JSON-LD format. JSON-LD is a lightweight Linked Data format.  
   }]]
 ```
 
-The most general layer of information is a ro-crate is the Root Data Entity. This has the schema.org Type `DataSet`, which is a subset of `CreativeWork` Type (https://schema.org/CreativeWork)
+The most general layer of information is a ro-crate is the Root Data Entity `@id=.\`. This Root Data Entity has the schema.org _Type_ `DataSet`, which is a subset of `CreativeWork` Type (https://schema.org/CreativeWork)
+
+Where files and folders are represented as *Data Entities* in the RO-Crate JSON-LD, these MUST be linked to, either directly or indirectly, from the [Root Data Entity](https://www.researchobject.org/ro-crate/1.1/root-data-entity.html) using the [hasPart](http://schema.org/hasPart) property.
+
+Some contextual entities can also be considered data entities - for instance the [license](https://www.researchobject.org/ro-crate/1.1/contextual-entities.html#licensing-access-control-and-copyright) property refers to a [CreativeWork](http://schema.org/CreativeWork) that can reasonably be downloaded, however a license document is not  usually considered as part of research outputs and would therefore  typically not be included in [hasPart](http://schema.org/hasPart) on the [root data entity](https://www.researchobject.org/ro-crate/1.1/root-data-entity.html).
 
 ### RO-Crate: adapting for M@TE
 
-RO-Crates provide a nice solution for describing computation models, because they:
+RO-Crates are well suitred to the task of describing computational models (a research object). Key attributes of the RO-Crate format/specification which we find useful:
 
 * handle the diverse set of entitites that are involved in the creation of model
-* are based on schema.org/json
+* allow clear conceptual separation between data and contextual entities
+* based on schema.org/json-ld
+* facilitate reuse of existing metadata (e.g. ORCID data, using json-ld requests)
+* easy to programatically verify and modified
 * can be extended to provide descriptions of workflow
 
-In terms of M@TE project, an important requirement is that the RO-Crate can fulfil metadata requirements (ISO 19115) used in the NCI GeoNetwork catalogue (https://geonetwork.nci.org.au/), where M@TE model are stored. 
-
-Many of the field requirements in ISO 19115 are easily mapped to  `DataSet` (or by inheritance `CreativeWork`) Properties. For instance `CreativeWork` properties will hold information about licence, authors, keywords, version, citation, funder etc.
+In terms of M@TE project, an important requirement is that the RO-Crate can fulfil metadata requirements (ISO 19115) used in the NCI GeoNetwork catalogue (https://geonetwork.nci.org.au/), where M@TE model are stored. Many of the field requirements in ISO 19115 are easily mapped to  `DataSet` (or by inheritance `CreativeWork`) Properties. For instance `CreativeWork` properties will hold information about licence, authors, keywords, version, citation, funder etc.
 
 ___Key features of RO-Crates___
 
