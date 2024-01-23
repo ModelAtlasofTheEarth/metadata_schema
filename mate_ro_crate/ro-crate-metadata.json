@@ -79,11 +79,11 @@
     {
       "@id": "https://orcid.org/0000-0001-0002-0003",
       "@type": "Person",
-      "givenName": 'Jane',
-      "familyName": 'Doe'
+      "givenName": "Jane",
+      "familyName": "Doe"
     },
     {"@type": "Organization",
-    "@id': "https://ror.org/04yx6dh41",
+    "@id": "https://ror.org/04yx6dh41",
     "name": "National Computational Infrastructure"
     },
     {
@@ -103,9 +103,7 @@
       "result": {
         "@id": "model_output_data"
       }
-    },
-
+    }
 
  ]
 }
-
