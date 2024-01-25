@@ -1,6 +1,17 @@
-    {
+{"Person": {
       "@id": "",
       "@type": "Person",
       "givenName": "",
       "familyName": ""
     },
+
+"ScholarlyArticle":     {
+      "@id": "",
+      "@type": "ScholarlyArticle",
+      "name": "",
+      "abstract": "",
+      "owl:sameAs":
+    },
+
+
+}
