@@ -36,7 +36,7 @@
     {
       "@id": "model_inputs",
       "@type": ["Dataset", "SoftwareSourceCode"],
-      "description": "Code and inputs for Creative Work",
+      "description": "Code and inputs for model",
       "creator": "",
       "author": "",
       "version": "",
@@ -50,7 +50,7 @@
       "storageRequirements":""
     },
     {
-      "@id": "model_output_data",
+      "@id": "model_outputs",
       "@type": ["Dataset"],
       "description": "output data for model",
       "creator": "",
