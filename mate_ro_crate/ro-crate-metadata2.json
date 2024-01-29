@@ -36,7 +36,7 @@
     {
       "@id": "model_inputs",
       "@type": ["Dataset", "SoftwareSourceCode"],
-      "description": "Code and inputs for model",
+      "description": "Code and inputs for computation model",
       "creator": "",
       "author": "",
       "version": "",
@@ -52,7 +52,7 @@
     {
       "@id": "model_outputs",
       "@type": ["Dataset"],
-      "description": "output data for model",
+      "description": "output data for computational model",
       "creator": "",
       "author": "",
       "fileFormat": "",
