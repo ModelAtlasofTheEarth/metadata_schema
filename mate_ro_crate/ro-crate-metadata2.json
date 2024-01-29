@@ -21,11 +21,15 @@
       "keywords": "key1, key2, key3",
       "about": [{"@id": "https://linked.data.gov.au/def/anzsrc-for/2020/370601"}],
       "funder": {"@id": "https://ror.org/038sjwq14"},
+      "Dataset version": "",
+      "Temporal extents": "",
+      "Spatial extents": "",
+      "Dataset lineage information": "",
+      "Dataset format": "",
+      "Dataset status": "",
       "hasPart": [
         {"@id": "model_code_inputs"},
         {"@id": "model_output_data"},
-        {"@id": "https://github.com/ResearchOrg/numerical_model/"},
-        {"@id": "https://zenodo.org/records/1234667"},
         {"@id": "#datasetCreation"}
       ]
     },
@@ -53,12 +57,6 @@
       "description": "output data for model",
       "creator": "",
       "author": "",
-      "Dataset version": "",
-      "Temporal extents": "",
-      "Spatial extents": "",
-      "Dataset lineage information": "",
-      "Dataset format": "",
-      "Dataset status": "",
       "fileFormat": "",
       "owl:sameAs": []
     },
