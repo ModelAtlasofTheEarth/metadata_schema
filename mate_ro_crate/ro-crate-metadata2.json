@@ -63,26 +63,6 @@
       "owl:sameAs": []
     },
     {
-    "@id": "https://zenodo.org/records/1234667",
-    "@type": ["SoftwareSourceCode", "SoftwareApplication"],
-    "name": "Software framework to run you model",
-    "funder": "",
-    "version":"",
-    "referencePublication": "",
-    "buildInstructions":"",
-    "applicationCategory":"",
-    "license": "",
-    "softwareRequirements":"",
-    "owl:sameAs": []
-  },
-
-    {
-      "@id": "https://orcid.org/0000-0001-0002-0003",
-      "@type": "Person",
-      "givenName": "Jane",
-      "familyName": "Doe"
-    },
-    {
       "@id": "#datasetCreation",
       "@type": "CreateAction",
       "agent": {
