@@ -55,7 +55,8 @@
       "description": "output data for computational model",
       "creator": "",
       "author": "",
-      "fileFormat": ""
+      "fileFormat": "",
+      "owl:sameAs": []
     },
         {
       "@id": "website_material",
@@ -64,7 +65,6 @@
       "creator": "",
       "author": "",
       "fileFormat": "",
-      "owl:sameAs": []
     },
     {
       "@id": "#datasetCreation",
