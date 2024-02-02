@@ -30,6 +30,7 @@
       "hasPart": [
         {"@id": "model_code_inputs"},
         {"@id": "model_output_data"},
+        {"@id": "website_material"},
         {"@id": "#datasetCreation"}
       ]
     },
@@ -52,6 +53,14 @@
       "@id": "model_outputs",
       "@type": ["Dataset"],
       "description": "output data for computational model",
+      "creator": "",
+      "author": "",
+      "fileFormat": ""
+    },
+        {
+      "@id": "website_material",
+      "@type": ["Dataset", "CreativeWork"],
+      "description": "material for m@te website",
       "creator": "",
       "author": "",
       "fileFormat": "",
