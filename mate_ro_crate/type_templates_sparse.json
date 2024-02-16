@@ -1,0 +1,58 @@
+{"Person": {
+      "@id": "",
+      "@type": "Person",
+      "givenName": "",
+      "familyName": "",
+      "url":"",
+      "sameAs" :""
+      },
+
+"ScholarlyArticle":     {
+      "@id": "",
+      "@type": "ScholarlyArticle",
+      "name": "",
+      "abstract": "",
+      "author": "",  
+      "identifier": "", 
+      "url":"",
+      "sameAs" :""
+      },
+      
+"SoftwareSourceCode":   {
+      "@type": "SoftwareSourceCode",
+      "@id": "",
+      "name": "",
+      "softwareVersion": "",
+      "author": "",
+      "version":"",
+      "citation": "",
+      "codeRepository": "",
+      "programmingLanguage": "",
+      "runtimePlatform": "",
+      "targetProduct": "",
+      "license":"",
+      "url":"",
+      "sameAs" :""
+      },
+      
+"SoftwareApplication":   {
+      "@type": "SoftwareApplication",
+      "@id": "",
+      "name": "",
+      "softwareVersion": "",
+      "applicationCategory": "",
+      "author": "",
+      "version":"",
+      "citation": "",
+      "url":"",
+      "sameAs" :""
+      },
+      
+"Organization": {
+      "@type": "Organization", 
+      "@id": "",
+      "name": "",
+      "url":"",
+      "sameAs" :""
+}
+}
