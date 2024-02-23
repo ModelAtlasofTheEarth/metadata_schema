@@ -3,8 +3,8 @@
       "@type": "Person",
       "givenName": "",
       "familyName": "",
-      "url":"",
-      "sameAs" :""
+      "identifier": "",
+      "url":""
       },
 
 "ScholarlyArticle":     {
@@ -12,12 +12,11 @@
       "@type": "ScholarlyArticle",
       "name": "",
       "abstract": "",
-      "author": "",  
-      "identifier": "", 
-      "url":"",
-      "sameAs" :""
+      "author": "",
+      "identifier": "",
+      "url":""
       },
-      
+
 "SoftwareSourceCode":   {
       "@type": "SoftwareSourceCode",
       "@id": "",
@@ -31,10 +30,10 @@
       "runtimePlatform": "",
       "targetProduct": "",
       "license":"",
-      "url":"",
-      "sameAs" :""
+      "identifier": "",
+      "url":""
       },
-      
+
 "SoftwareApplication":   {
       "@type": "SoftwareApplication",
       "@id": "",
@@ -44,16 +43,15 @@
       "author": "",
       "version":"",
       "citation": "",
-      "url":"",
-      "sameAs" :""
+      "identifier": "",
+      "url":""
       },
-      
+
 "Organization": {
-      "@type": "Organization", 
+      "@type": "Organization",
       "@id": "",
       "name": "",
-      "url":"",
-      "sameAs" :""
+      "identifier": "",
+      "url":""
 }
 }
-
