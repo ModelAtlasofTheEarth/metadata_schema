@@ -10,7 +10,7 @@
     },
     {
       "@id": "./",
-      "identifier": "",
+      "identifier": [],
       "@type": "Dataset",
       "name": "my_model_year",
       "description": "",
@@ -36,7 +36,7 @@
     },
     {
       "@id": "model_inputs",
-      "identifier": "",
+      "identifier": [],
       "@type": ["Dataset", "SoftwareSourceCode"],
       "description": "Code and inputs for computation model",
       "creator": "",
@@ -51,7 +51,7 @@
     {
       "@id": "model_outputs",
       "@type": ["Dataset"],
-      "identifier": "",
+      "identifier": [],
       "description": "",
       "creator": "",
       "fileFormat": "",
