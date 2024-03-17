@@ -40,7 +40,7 @@
       "@id": "model_inputs",
       "identifier": [],
       "@type": ["Dataset", "SoftwareSourceCode"],
-      "description": "Code and inputs for computation model",
+      "description": "Code and inputs for computational model",
       "creator": "",
       "version": "",
       "programmingLanguage": "",
