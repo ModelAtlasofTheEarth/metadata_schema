@@ -26,8 +26,8 @@
       "version": "",
       "temporalCoverage": "",
       "spatialCoverage": "",
-      "isBasedOn": "",
-      "isPartOf":"",
+      "isBasedOn": [],
+      "isPartOf":[],
       "creativeWorkStatus": "",
       "hasPart": [
         {"@id": "model_inputs"},
