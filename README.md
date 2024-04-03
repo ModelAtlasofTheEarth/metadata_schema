@@ -1,8 +1,12 @@
 # M@TE Metadata Model
 
-## Summary
+## Brief Description
 
-In the M@TE project, the metadata format that describes a model is based on the RO-Crate project https://www.researchobject.org/ro-crate/. The metadata file is found in the root directory of the model. 
+Model Atlas of the Earth (M@TE) is a project supported by AuScope. It supports the FAIR data principles in relation to computation models of the Earth, with a focus on tectonics/geodynamics, hydrogeology and surface processes. M@TE provides and connects digital infrastructure, to support the entire model life-cycle, resulting in a permanent collection of FAIR computation models of Earth processes. The model submission process (for details, see github.com/ModelAtlasofTheEarth/model_submission) generates a comprehensive metadata  document, utilising the principles of the RO-Crate project. To ensure long-term storage of large computational model outputs, M@TE models are cloned to servers on the National Computational Infrastructure (more information at geonetwork.nci.org.au). This procedure assigns a citable  DOI to each M@TE model. Additionally,  models are featured on the project website,  https://mate.science. See website for furthr information. 
+
+## Summary of metadata
+
+In the M@TE project, the metadata format that describes a model is based on the [RO-Crate project](https://www.researchobject.org/ro-crate/). The metadata file is found in the root directory of the model (`/ro-crate-metadata.jsonld`). 
 
 In RO-Crate, a research-object (here a computational model) is encapsulated through a collection (crate) of several `schema.org` types or entities. Together these form a meaningful unit for the purposes of communication, citation, distribution, preservation, etc.
 
@@ -10,12 +14,11 @@ The file `mate_ro_crate/ro-crate-metadata.jsonld` is the basic template, which i
 
 ## RO-Crate: background 
 
-
 In RO-Crate a research-object is encapsulated through a collection (crate) of several `schema.org` types or entities.  Schema.org is a collaborative, community activity with a mission to create, maintain, and promote schemas for structured data on the Internet, on web pages, in email messages, and beyond.
 
 Some of these entities refer to directories and file payloads that are stored in the M@TE model (e.g. on Github/NCI). These are generally referred to as `data entities`. Other entities exist elsewhere, for instance people, research groups, and data is already available on persistent web repositories, such as Zenodo. These are referred to as `contextual entities` 
 
-Ro-crates use the JSON-LD format. JSON-LD is a lightweight Linked Data format.  In the JSON-LD format, the crate is represented by the @graph array:
+RO-crates use the JSON-LD format. JSON-LD is a lightweight Linked Data format. In the JSON-LD format, the crate is represented by the @graph array:
 
 ```
 "@graph": [
@@ -36,13 +39,13 @@ Some contextual entities can also be considered data entities - for instance the
 
 ### RO-Crate: adapting for M@TE
 
-RO-Crates are well suitred to the task of describing computational models (a research object). Key attributes of the RO-Crate format/specification which we find useful:
+RO-Crates are well suited to the task of describing computational models (a research object). Key attributes of the RO-Crate format/specification which we find useful:
 
-* handle the diverse set of entitites that are involved in the creation of model
-* allow clear conceptual separation between data and contextual entities
+* handle the diverse set of entitites that are involved in the creation of model (software pojects, specific code, computers, output data, publication, funders) 
+* clear conceptual separation between data and contextual entities
 * based on schema.org/json-ld
 * facilitate reuse of existing metadata (e.g. ORCID data, using json-ld requests)
-* easy to programatically verify and modified
+* easy to programatically verify and modify
 * can be extended to provide descriptions of workflow
 
 In terms of M@TE project, an important requirement is that the RO-Crate can fulfil metadata requirements (ISO 19115) used in the NCI GeoNetwork catalogue (https://geonetwork.nci.org.au/), where M@TE model are stored. Many of the field requirements in ISO 19115 are easily mapped to  `DataSet` (or by inheritance `CreativeWork`) Properties. For instance `CreativeWork` properties will hold information about licence, authors, keywords, version, citation, funder etc.
