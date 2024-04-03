@@ -1,10 +1,10 @@
 # M@TE Metadata Model
 
-## Brief Description
+## Project Description
 
 Model Atlas of the Earth (M@TE) is a project supported by AuScope. It supports the FAIR data principles in relation to computation models of the Earth, with a focus on tectonics/geodynamics, hydrogeology and surface processes. M@TE provides and connects digital infrastructure, to support the entire model life-cycle, resulting in a permanent collection of FAIR computation models of Earth processes. The model submission process (for details, see github.com/ModelAtlasofTheEarth/model_submission) generates a comprehensive metadata  document, utilising the principles of the RO-Crate project. To ensure long-term storage of large computational model outputs, M@TE models are cloned to servers on the National Computational Infrastructure (more information at geonetwork.nci.org.au). This procedure assigns a citable  DOI to each M@TE model. Additionally,  models are featured on the project website,  https://mate.science. See website for furthr information. 
 
-## Summary of metadata
+## Summary of metadata model
 
 In the M@TE project, the metadata format that describes a model is based on the [RO-Crate project](https://www.researchobject.org/ro-crate/). The metadata file is found in the root directory of the model (`/ro-crate-metadata.jsonld`). 
 
