@@ -50,7 +50,8 @@
       "runtimePlatform":"",
       "memoryRequirements":"",
       "processorRequirements":"",
-      "storageRequirements":""
+      "storageRequirements":"",
+      "contentSize":""
     },
     {
       "@id": "model_outputs",
@@ -59,6 +60,7 @@
       "description": "",
       "creator": "",
       "fileFormat": "",
+      "contentSize":"",
       "owl:sameAs": []
     },
         {
