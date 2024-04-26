@@ -55,4 +55,17 @@
       "identifier": "",
       "url":""
 }
+
+      "Service": {
+      "@type": "Service",
+      "@id": "",
+      "name": "",
+      "identifier": "",
+      "inLanguage": "",
+      "author": "",
+      "publisher": "",
+      "provider": "",
+      "url":""
+}
+      
 }
