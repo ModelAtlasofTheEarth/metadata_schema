@@ -14,7 +14,9 @@
       "abstract": "",
       "author": "",
       "identifier": "",
-      "url":""
+      "url":"",
+      "license": "",
+      "datePublished": ""
       },
 
 "SoftwareSourceCode":   {
@@ -23,7 +25,6 @@
       "name": "",
       "softwareVersion": "",
       "author": "",
-      "version":"",
       "citation": "",
       "codeRepository": "",
       "programmingLanguage": "",
@@ -41,9 +42,9 @@
       "softwareVersion": "",
       "applicationCategory": "",
       "author": "",
-      "version":"",
       "citation": "",
       "identifier": "",
+      "license": "",
       "url":""
       },
 
