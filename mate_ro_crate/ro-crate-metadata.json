@@ -1,4 +1,4 @@
-{ "@context": ["https://w3id.org/ro/crate/1.1/context", "https://raw.githubusercontent.com/codemeta/codemeta/master/codemeta.jsonld"] ,
+{ "@context": ["https://www.researchobject.org/ro-crate/1.1/context.jsonld", "https://raw.githubusercontent.com/codemeta/codemeta/master/codemeta.jsonld"] ,
   "@graph": [
 
     {
