@@ -35,6 +35,7 @@
         {"@id": "model_inputs"},
         {"@id": "model_outputs"},
         {"@id": "website_material"},
+        {"@id": "metadata_trail"},
         {"@id": "#datasetCreation"}
       ]
     },
@@ -70,6 +71,34 @@
       "creator": "",
       "fileFormat": ""
     },
+    {
+          "@type": "Dataset",
+          "@id": "metadata_trail/",
+          "name": "metadata_trail",
+          "hasPart": [
+            {
+              "@type": "CreativeWork",
+              "@id": "metadata_trail/issue_body.md",
+              "name": "Issue Body",
+              "encodingFormat": "text/markdown",
+              "contentUrl": "metadata_trail/issue_body.md"
+            },
+            {
+              "@type": "CreativeWork",
+              "@id": "metadata_trail/issue_dict.json",
+              "name": "Issue Dictionary",
+              "encodingFormat": "application/json",
+              "contentUrl": "metadata_trail/issue_dict.json"
+            },
+            {
+              "@type": "CreativeWork",
+              "@id": "metadata_trail/nci_iso.csv",
+              "name": "NCI ISO Crosswalk",
+              "encodingFormat": "text/csv",
+              "contentUrl": "metadata_trail/nci_iso.csv"
+            }
+          ]
+        },
     {
       "@id": "#datasetCreation",
       "@type": "CreateAction",
