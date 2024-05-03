@@ -73,7 +73,7 @@
     },
     {
           "@type": "Dataset",
-          "@id": "metadata_trail/",
+          "@id": "metadata_trail",
           "name": "metadata_trail",
           "hasPart": [
             {
