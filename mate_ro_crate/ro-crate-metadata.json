@@ -32,6 +32,7 @@
       "isPartOf":[],
       "creativeWorkStatus": "",
       "creditText": "",
+      "url":"",
       "hasPart": [
         {"@id": "model_inputs"},
         {"@id": "model_outputs"},
@@ -82,32 +83,28 @@
               "@id": "metadata_trail/issue_body.md",
               "name": "Issue Body",
               "description": "Markdown document showing the original github issue body associated with the model submission.",
-              "encodingFormat": "text/markdown",
-              "contentUrl": "metadata_trail/issue_body.md"
+              "encodingFormat": "text/markdown"
             },
             {
               "@type": "CreativeWork",
               "@id": "metadata_trail/issue_dict.json",
               "name": "Issue Dictionary",
               "description": "json file representing the dictionary that is constructured by model_submission/.github/scripts/parse_issue.py",
-              "encodingFormat": "application/json",
-              "contentUrl": "metadata_trail/issue_dict.json"
+              "encodingFormat": "application/json"
             },
             {
               "@type": "CreativeWork",
               "@id": "metadata_trail/nci_iso.csv",
               "name": "NCI ISO Crosswalk",
               "description": "Simple crosswalk of metadata into ISO 19115 format/schema compatible with NCI GeoNwtework",
-              "encodingFormat": "text/csv",
-              "contentUrl": "metadata_trail/nci_iso.csv"
+              "encodingFormat": "text/csv"
             }, 
                        {
               "@type": "CreativeWork",
               "@id": "metadata_trail/ro-crate-metadata-nested.json",
               "name": "Nested version of RO-Crate",
               "description": "Nested version of RO-Crate, hasn't been flattenened.",
-              "encodingFormat": "application/json",
-              "contentUrl": "metadata_trail/nci_iso.csv"
+              "encodingFormat": "application/json"
             }
           ]
         },
