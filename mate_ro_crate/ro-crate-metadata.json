@@ -43,8 +43,9 @@
     },
     {
       "@id": "model_inputs",
-      "identifier": [],
       "@type": ["Dataset", "SoftwareSourceCode"],
+      "identifier": [],
+      "url":"",
       "description": "Code and inputs for computational model",
       "creator": "",
       "version": "",
@@ -60,6 +61,7 @@
       "@id": "model_outputs",
       "@type": ["Dataset"],
       "identifier": [],
+      "url":"",
       "description": "",
       "creator": "",
       "fileFormat": "",
