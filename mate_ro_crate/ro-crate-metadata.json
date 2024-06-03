@@ -68,7 +68,8 @@
       "contentSize":""
     },
         {
-      "@id": "website_material",
+      "@id": ".website_material",
+      "name": ".website_material",
       "@type": ["Dataset", "CreativeWork"],
       "description": "material for m@te website",
       "creator": "",
@@ -76,8 +77,8 @@
     },
     {
           "@type": "Dataset",
-          "@id": "metadata_trail",
-          "name": "metadata_trail",
+          "@id": ".metadata_trail",
+          "name": ".metadata_trail",
           "hasPart": [
             {
               "@type": "CreativeWork",
