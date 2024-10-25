@@ -34,15 +34,15 @@
       "creditText": "",
       "url":"",
       "hasPart": [
-        {"@id": "model_inputs"},
-        {"@id": "model_outputs"},
+        {"@id": "model_code_inputs"},
+        {"@id": "model_output_data"},
         {"@id": "website_material"},
         {"@id": "metadata_trail"},
         {"@id": "#datasetCreation"}
       ]
     },
     {
-      "@id": "model_inputs",
+      "@id": "model_code_inputs",
       "@type": ["Dataset", "SoftwareSourceCode"],
       "identifier": [],
       "url":"",
@@ -58,7 +58,7 @@
       "contentSize":""
     },
     {
-      "@id": "model_outputs",
+      "@id": "model_output_data",
       "@type": ["Dataset"],
       "identifier": [],
       "url":"",
