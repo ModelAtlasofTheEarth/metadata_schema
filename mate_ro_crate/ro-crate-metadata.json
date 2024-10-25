@@ -123,10 +123,10 @@
         { "@id": "[]" }
       ],
       "object": {
-        "@id": "model_inputs"
+        "@id": "model_code_inputs"
       },
       "result": {
-        "@id": "model_outputs"
+        "@id": "model_output_data"
       }
     }
  ]
